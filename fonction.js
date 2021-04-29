@@ -62,7 +62,7 @@ const gameOver = () => {
     prix.disabled = true;
 
     if(rounds === 1) {
-        alert("TU ES UN PUTAIINNNN DE DIEU DU S.. (OU PAS) \n Tu as a trouvé le juste prix en " + rounds + " tour \n et en " + timer + " secondes\n XoXo")
+        alert("TU ES UN PUTAIINNNN DE DIEU DU S.. (OU PAS) \n Tu as trouvé le juste prix en " + rounds + " tour \n et en " + timer + " secondes\n XoXo")
     }  else {                                               
     alert("TU ES UN DIEU DU ... \n Tu as réussi à trouver le juste prix en " + rounds + " tours \n et en " + timer + " secondes\n XoXo");
     }
