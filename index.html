@@ -12,6 +12,13 @@
 </head>
 <body>
     <div class="container">
+        <header class="justify-content-center mb-5">
+            <div class="text-center mt-2 copyright">
+                <p>- Made with <span class="text-danger">&hearts;</span> -</p>
+                <p>by Hommet Yohann & Turpin Jonathan</p> 
+                <p>- Copyright &copy; 2021 -</p>
+            </div>
+        </header>
 
         <div id="title" class="row justify-content-center mt-5">
             <h1>Le Juste Prix !</h1>
@@ -32,7 +39,7 @@
                                 <button id="verify" type="submit" class="btn btn-primary shadow px-4">Deviner</button>
                         </div>
 
-                        <small class="text-danger pl-2">Vous devez rentrer un nombre</small>
+                        <small id="error" class="text-danger pl-2">Vous devez rentrer un nombre</small>
                     </form>
 
                 </div>
@@ -45,6 +52,8 @@
         <div class="row justify-content-center shadow-lg">
             <div id="instructions" class="col-lg-8"></div>
         </div>
+
+
 
     </div>
 

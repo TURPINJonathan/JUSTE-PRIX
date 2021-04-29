@@ -8,6 +8,15 @@ html body {
     font-family: sans-serif;
 }
 
+.copyright {    
+    color: rgb(148, 148, 148);
+    line-height: 0.5rem;
+}
+
+.copyright span {
+    font-size: larger;
+}
+
 #title {
     display: flex;
     flex-direction: column;
@@ -17,6 +26,10 @@ h1 {
     color: #ff7315;
     text-align: center;
     font-size: 3em;
+}
+
+#error {
+    display: none;
 }
 
 #instructions {

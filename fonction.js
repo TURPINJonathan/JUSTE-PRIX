@@ -4,12 +4,13 @@ const prix          = document.querySelector('#prix');
 const instructions  = document.getElementById('instructions');
 const button        = document.querySelector('#verify')
 const divTitle      = document.querySelector('#title')
+const errorMessage  = document.querySelector('#error')
 let buttonTimer     = document.createElement('button');
 
 
 // Génère un nombre aléatoire à chaques parties
 let randomNumber = Math.round(Math.random() * 1001) // sort un nombre aléatoire entre 0 et 1 multiplié par 1001
-console.log(randomNumber);
+// console.log(randomNumber);
 
 
 // Déclaration des variables
@@ -22,9 +23,14 @@ let timer  = 0;
 const handleShowResult = function (event){
     event.preventDefault();
     const inputValue = prix.value;
-    rounds++;
-    
-    verifNumber(inputValue, rounds);
+
+    if (isNaN(inputValue) || inputValue == '') { // Si quand on valide l'input contient du texte ou est vide, alors on mets la bordure en rouge
+        prix.style.border = '1px red solid';
+    } else {
+        prix.style.borderColor = 'silver';
+        rounds++;
+        verifNumber(inputValue, rounds);
+    }
 }
 
 
@@ -53,11 +59,13 @@ const gameOver = () => {
     clearInterval(timerInterval);
     
     button.disabled = true;                                                    
-    prix.disabled = true;   
+    prix.disabled = true;
+
     if(rounds === 1) {
         alert("TU ES UN PUTAIINNNN DE DIEU DU S.. (OU PAS) \n Tu as a trouvé le juste prix en " + rounds + " tour \n et en " + timer + " secondes\n XoXo")
-    }                                                 
+    }  else {                                               
     alert("TU ES UN DIEU DU ... \n Tu as réussi à trouvé le juste prix en " + rounds + " tours \n et en " + timer + " secondes\n XoXo");
+    }
 }
 
 
@@ -67,6 +75,18 @@ const addActions = (number, phrase, classlist) => {
     stock.textContent = 'Tour n°' + rounds + ' - Tu as misé ' + number + " " +  phrase;     // stock => "<p>" + number + "</p>"
     stock.classList.add(classlist);
     instructions.prepend(stock); 
+}
+
+
+const handleErrors = () => {
+
+    if (isNaN(prix.value)) {
+        // Afficher le message d'erreur si input n'est pas un nombre
+        errorMessage.style.display = 'block';
+    } else {
+        // Cacher le message d'erreur
+        errorMessage.style.display = 'none';
+    }
 }
 
 
@@ -82,6 +102,7 @@ const timerHandler = () => {
 
 // !Evènements
 formulaire.addEventListener('submit', handleShowResult);
+prix.addEventListener('keyup', handleErrors)
 
 const timerInterval = setInterval(timerHandler, 1000);
 timerInterval;
