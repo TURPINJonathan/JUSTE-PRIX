@@ -46,7 +46,7 @@ const verifNumber = (number) => {
         addActions(number, ' : encore une trop grosse', 'moins');  
 
     } else {
-        addActions(number, ' : TU ES UN DIEU DU ...', 'fini');
+        addActions(number, ' : TU ES UN DIEU DU S..', 'fini');
         
         gameOver();
     }
