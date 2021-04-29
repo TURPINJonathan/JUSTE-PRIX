@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Le Juste Prix !</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+        <div id="title" class="row justify-content-center mt-5">
+            <h1>Le Juste Prix !</h1>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="row justify-content-center mt-5 mb-4">
+            <div class="col-lg-8">
+
+                <div class="bg-light p-5 shadow" id="box">
+
+                    <form id="formulaire">
+                        <div class="row">
+                            <div class="col">
+                                <input id="prix" class="form-control" placeholder="Devinez le prix (entre 0 et 1000)"/>
+                            </div>
+                                     
+                                <button id="verify" type="submit" class="btn btn-primary shadow px-4">Deviner</button>
+                        </div>
+
+                        <small class="text-danger pl-2">Vous devez rentrer un nombre</small>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Instructions -->
+
+        <div class="row justify-content-center shadow-lg">
+            <div id="instructions" class="col-lg-8"></div>
+        </div>
+
+    </div>
+
+    <script src="fonction.js"></script>
+</body>
+</html>
