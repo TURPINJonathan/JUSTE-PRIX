@@ -217,9 +217,13 @@
 
 .copyright span {
     font-size: larger;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;    
 }
 
-.copyright .credits {
+.credits {
     margin: 1rem 0;
 }
 
@@ -361,7 +365,7 @@
         padding: 0;
     }
 
-    .copyright p {
+    .credits {
         font-size: 0.6em;
     }
 
@@ -396,7 +400,7 @@
         height: 18px;
 
     }
-    .copyright p {
+    .credits{
         font-size: 0.4em;
     }
 }

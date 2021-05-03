@@ -43,10 +43,10 @@ const app = {
         
         // Pour chaques actions afficher si plus petit, plus grand ou gagné
         if (number < app.wtfItsSecret) {
-            app.addActions(number, ' : il faut grandir du kiki', 'moins');
+            app.addActions(number, ' : vise plus haut', 'moins');
             
         } else if (number > app.wtfItsSecret) {
-            app.addActions(number, ' : encore une trop grosse', 'plus');  
+            app.addActions(number, ' : un peu plus bas !', 'plus');  
 
         } else {
             app.gameOver();
@@ -62,10 +62,10 @@ const app = {
         app.inputNumber.disabled = true;
 
         if(rounds === 1) {
-            alert("TU ES UN PUTAIINNNN DE DIEU DU S.. (OU PAS) \n Tu as trouvé le juste prix en " + app.rounds + " tour \n et en " + app.timer + " secondes\n XoXo")
+            alert("C'EST EXEPTIONNEL ! \n Tu as trouvé le juste prix en seulement 1 tour ! \n Aurais-tu craqué le code ?! \n XoXo")
         
         }  else {                                               
-        alert("TU ES UN DIEU DU ... \n Tu as réussi à trouver le juste prix en " + app.rounds + " tours \n et en " + app.timer + " secondes\n XoXo");
+        alert("BRAVO L'ARTISTE ! \n Tu as réussi à trouver le juste prix en " + app.rounds + " tours \n et en " + app.timer + " secondes\n XoXo");
         }
     },
 
