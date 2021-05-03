@@ -2,9 +2,9 @@
 const formulaire    = document.querySelector('#formulaire');
 const prix          = document.querySelector('#prix');
 const instructions  = document.getElementById('instructions');
-const button        = document.querySelector('#verify')
-const divTitle      = document.querySelector('#title')
-const errorMessage  = document.querySelector('#error')
+const button        = document.querySelector('#verify');
+const divTitle      = document.querySelector('#title');
+const errorMessage  = document.querySelector('#error');
 let buttonTimer     = document.createElement('button');
 
 

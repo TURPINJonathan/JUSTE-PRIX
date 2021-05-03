@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Original Surfer', cursive;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: orange;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.6);
+    border-radius: 1.5rem;
+}
+
+
+/*? ******************HEADER********************** */
+
+
+
+/*? ******************SECTION JUSTE PRIX*********** */
+
+
+#justePrix {
+    position: relative;
+    background-image: url(../img/Numbers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw; 
+    display: flex;
+}
+
+#justePrix::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, black, transparent);
+    z-index: 1;
+}
+
+#justePrix::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, black, transparent);
+    z-index: 1;
+}
+
+#section-title {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#section-title h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 7em;
+    color: rgba(255, 255, 255, 0);
+    background: linear-gradient(120deg,rgb(228, 178, 13) 0%,#aa0a0a 50%,#3eaa00 100% );
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+
+}
+
+/******************** FORM ***************************** */
+
+
+.divForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    min-height: 200px;
+    margin: 0 auto;
+
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 20px 0 rgba(221, 221, 221, 0.35);
+
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#formNumber {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#verifyNumber {
+    margin-top: 1rem;
+}
+
+#errorMessage {
+    display: block;
+    visibility: hidden;
+    color: red;
+}
+
+.actionsList {
+    margin: 3rem auto 0;
+    padding: 2rem;
+    max-width: 50%;
+    max-height: 300px;
+    overflow-y: scroll;
+
+    background: rgba(44, 44, 44, 0.4);
+    box-shadow: 0 8px 20px 0 rgba(98, 98, 98, 0.30);
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 8px;
+}
+
+
+
+/*********************FOOTER************************* */
+
+.copyright {    
+    color: rgb(148, 148, 148);
+    line-height: 0.5rem;
+}
+
+.copyright span {
+    font-size: larger;
+}
+
+/* *******************CLASSLIST POUR AFFICHAGES EN JS************************** */
+
+.plus {
+    color: #ff3246;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.moins {
+    color: #ffa372;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+/* 
+.fini {
+    color: #0c9463;
+    padding: 1rem 0;
+
+} */
+
+.timer {
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
