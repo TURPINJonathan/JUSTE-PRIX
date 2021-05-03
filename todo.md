@@ -14,3 +14,4 @@ plage choix de jeux
 theme  
 niveau de difficultés  
 formulaire suggestion  
+nombre max de tour en fonction du lvl
