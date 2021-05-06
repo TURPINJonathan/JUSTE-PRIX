@@ -28,6 +28,8 @@
 
 
 /*? ******************SECTION JUSTE PRIX*********** */
+
+
 #main {
     position: relative;
     background-image: url(../img/Numbers.jpg);
@@ -36,17 +38,6 @@
     background-size: cover;
     min-height: 100vh;
     max-width: 100vw; 
-}
-
-#justeprix::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to bottom, black, transparent);
-    z-index: 1;
 }
 
 #main::after {
@@ -60,15 +51,23 @@
     z-index: 1;
 }
 
+#justeprix::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, black, transparent);
+    z-index: 1;
+}
+
 #justePrix {   
     display: flex;
     position: relative;
 }
 
-.navbnar {
-    z-index: 50;
-}
-
+/* Title */
 
 .section-title {
     display: flex;
@@ -95,7 +94,7 @@
 }
 
 
-/******************** FORM ***************************** */
+/******************** FORM ************************* */
 
 
 .divBox {
@@ -220,11 +219,10 @@
     display: inline-block;
     align-items: center;
     justify-content: center;
-    margin: auto;    
 }
 
 .credits {
-    margin: 1rem 0;
+    margin: auto;
 }
 
 
@@ -267,9 +265,13 @@
         max-width: 60%;
     }
 
+    .checkNumber {
+        margin: 0.5rem auto 0;
+    }
+    
     .plus {
         padding: 0;
-    font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
     .moins {
@@ -277,10 +279,6 @@
         font-size: 1.2rem;
     }
 
-    .checkNumber {
-        margin: 0.5rem auto 0;
-    }
-    
 }
 
 @media (max-width: 920px) {
@@ -349,7 +347,16 @@
         font-size: 2.5rem;
     }
 
-
+    
+    .footer {    
+        height: 35px;
+        padding: 0;
+    }
+    
+    .credits {
+        font-size: 0.7em;
+    }
+    
     .plus {
         padding: 0;
     font-size: 1rem;
@@ -358,15 +365,6 @@
     .moins {
         padding: 0;
         font-size: 1rem;
-    }
-
-    .footer {    
-        height: 30px;
-        padding: 0;
-    }
-
-    .credits {
-        font-size: 0.6em;
     }
 
 }
@@ -397,11 +395,11 @@
     }
 
     .footer {
-        height: 18px;
+        height: 30px;
 
     }
     .credits{
-        font-size: 0.4em;
+        font-size: 0.6em;
     }
 }
 
