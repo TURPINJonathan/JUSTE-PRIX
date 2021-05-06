@@ -87,7 +87,7 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
 
     z-index: 2;
@@ -102,7 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 40%;
+    max-width: 45%;
     padding: 1.2rem 0;
     margin: 0 auto;
 
@@ -120,7 +120,7 @@
 .formContent {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
 }
 
 .checkNumber {
@@ -150,7 +150,7 @@
 .actionsList {
     margin: 3rem auto 0;
     padding: 2rem;
-    max-width: 35%;
+    max-width: 45%;
     max-height: 300px;
     overflow-y: scroll;
     text-align: center;
@@ -246,7 +246,7 @@
 @media (max-width: 1200px) {
 
     .section-title h1 {
-        font-size: 4em;
+        font-size: 5em;
         padding: 1em 0 0.5em;
     }
 

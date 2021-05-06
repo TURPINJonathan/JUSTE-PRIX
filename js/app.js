@@ -56,16 +56,16 @@ const app = {
     },
 
     gameOver: () => {
-        clearInterval(timerInterval);
+        clearInterval(app.timerInterval);
         
         app.checkNumber.disabled = true;                                                    
         app.inputNumber.disabled = true;
 
-        if(rounds === 1) {
+        if(app.rounds === 1) {
             alert("C'EST EXEPTIONNEL ! \n Tu as trouvé le juste prix en seulement 1 tour ! \n Aurais-tu craqué le code ?! \n XoXo")
         
         }  else {                                               
-        alert("BRAVO L'ARTISTE ! \n Tu as réussi à trouver le juste prix en " + app.rounds + " tours \n et en " + app.timer + " secondes\n XoXo");
+            alert("BRAVO L'ARTISTE ! \n Tu as réussi à trouver le juste prix en " + app.rounds + " tours \n et en " + app.timer + " secondes\n XoXo");
         }
     },
 
